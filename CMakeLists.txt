@@ -7,6 +7,6 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/inc/vmath)
-add_library(vmath SHARED ${CMAKE_CURRENT_SOURCE_DIR}/src/vmath.cpp)
+add_library(vmath ${CMAKE_CURRENT_SOURCE_DIR}/src/vmath.cpp)
 
 target_include_directories(vmath PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/inc)
