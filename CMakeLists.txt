@@ -10,3 +10,7 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/inc/vmath)
 add_library(vmath ${CMAKE_CURRENT_SOURCE_DIR}/src/vmath.cpp)
 
 target_include_directories(vmath PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/inc)
+
+install(TARGETS vmath
+        RUNTIME DESTINATION bin
+        ARCHIVE DESTINATION lib)
